@@ -9,6 +9,7 @@ Package.describe({
 Npm.depends({watch: "0.16.0"});
 
 Package.onUse(function(api) {
+  api.versionsFrom("METEOR@0.9.0")
   api.use([
     "http", "underscore",
     "nucleuside:live-update@0.3.1",
