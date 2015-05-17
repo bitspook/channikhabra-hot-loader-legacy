@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'channikhabra:hot-loader',
+  name: 'channikhabra:hot-loader-legacy',
   version: '0.0.1',
-  summary: 'Hot-load code while developing meteor apps',
-  git: '',
+  summary: 'Hot-load code while developing meteor apps (meteor-only solution)',
+  git: 'https://github.com/channikhabra/channikhabra-hot-loader-legacy',
   documentation: 'README.org'
 });
 

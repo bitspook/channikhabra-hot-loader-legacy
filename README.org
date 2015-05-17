@@ -1,0 +1,10 @@
+# * Why is `oldContent` of the js file required?
+# Imagine a file with 3 autoruns or 3 events. Now you change this file and remove 1 autorun. The new code which is pushed into the app has to undo that 1 autorun you deleted. If all HotLoader has is the new content, how will it know that it has to remove 1 autorun? Note that HotLoader doesn't actually hot-swap the code, it **eval**s the code. It will find out all the autoruns/events in the old file content, and remove all of them; then it will eval the new file to set new autoruns/events into place.
+
+* channikhabra:hot-loader-legacy
+Meteor-only way for hot-pushing code into your meteor app. It's not very useful because https://github.com/channikhabra/channikhabra-hot-loader#why-separate-npm-module%5D
+
+You can still use it though.
+#+BEGIN_SRC bash
+meteor add channikhabra:hot-loader-legacy
+#+END_SRC
